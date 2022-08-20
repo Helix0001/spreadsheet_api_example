@@ -19,12 +19,12 @@
 	and setting the viewing mode to "Anyone who has a link"
 ]]
 
-local HTTPService = game:GetService('HttpService')
+local HTTP_SERVICE = game:GetService('HttpService')
 
-local SpreadsheetID = 'YourSpreadsheetID'
+local SPREADSHEET_ID = 'YourSpreadsheetID'
 local API_KEY = 'YourAPIKey'
 
-local request_url = 'https://sheets.googleapis.com/v4/spreadsheets/%s%s'  --Format with: SpreadsheetID, args
+local REQUEST_URL = 'https://sheets.googleapis.com/v4/spreadsheets/%s%s'  --Format with: SpreadsheetID, args
 
 local module = {}
 export type Type = typeof(module)
@@ -32,13 +32,13 @@ export type Type = typeof(module)
 -- USAGE: handler:getValues('A1:Z10')
 function module.getValues(self: Type, range: string): {['Returns a table of JSON data if successful']:any}?
 	local args = ("/values/%s?key=%s"):format(range, API_KEY)
-	local url = string.format(request_url, SpreadsheetID, args)
+	local url = string.format(REQUEST_URL, SPREADSHEET_ID, args)
 	local success, response = pcall(function()
-		return HTTPService:GetAsync(url)
+		return HTTP_SERVICE:GetAsync(url)
 	end)
 
 	if success then
-		return HTTPService:JSONDecode(response)
+		return HTTP_SERVICE:JSONDecode(response)
 	else
 		error(response)
 		return {}
