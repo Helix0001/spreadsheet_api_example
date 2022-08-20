@@ -30,7 +30,7 @@ local module = {}
 export type Type = typeof(module)
 
 -- USAGE: handler:getValues('A1:Z10')
-function module.getValues(self: Type, range: string): {['Returns a table of JSON data if successfull']:any}?
+function module.getValues(self: Type, range: string): {['Returns a table of JSON data if successful']:any}?
 	local args = ("/values/%s?key=%s"):format(range, API_KEY)
 	local url = string.format(request_url, SpreadsheetID, args)
 	local success, response = pcall(function()
