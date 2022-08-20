@@ -3,8 +3,8 @@
 --[[ 
 	Create your spreadsheet and set it up however you want,
 	First get your spreadsheet ID, this is the string in the url after /d and before /edit
-	Example: https://docs.google.com/spreadsheets/d/1Lw97X3EvOJDAn_vSNVUG09cNQLZUDrwhYNa6bJ-NsMM/edit#gid=0
-	The spreadsheet ID is 1Lw97X3EvOJDAn_vSNVUG09cNQLZUDrwhYNa6bJ-NsMM
+	Example: https://docs.google.com/spreadsheets/d/ASD8ASDLKJASD1KJ1LKJ/edit#gid=0
+	The spreadsheet ID is ASD8ASDLKJASD1KJ1LKJ
 
 	You then need to create an API key if you haven't already which can be done here:
 	https://console.developers.google.com/apis/credentials
