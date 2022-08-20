@@ -15,8 +15,8 @@
 	If you don't know your project ID, enter the request URL in your browser,
 	there will be a link provided which takes you straight to where you need to be to enable it.
 	
-	If you recieve an error: 403 The caller does not have permission, I fixed this by clicking "Share" at the top right
-	and setting the mode "Anyone who has a link"
+	If you recieve an error: 403 The caller does not have permission, I fixed this by clicking "Share" at the top right in the spreadsheet,
+	and setting the viewing mode to "Anyone who has a link"
 ]]
 
 local HTTPService = game:GetService('HttpService')
