@@ -21,8 +21,8 @@
 
 local HTTPService = game:GetService('HttpService')
 
-local SpreadsheetID = '1Lw97X3EvOJDAn_vSNVUG09cNQLZUDrwhYNa6bJ-NsMM'
-local API_KEY = 'AIzaSyBVYZNpLrzV9Rv1_Q8CyaDmT6UX8v_oyY4'
+local SpreadsheetID = 'YourSpreadsheetID'
+local API_KEY = 'YourAPIKey'
 
 local request_url = 'https://sheets.googleapis.com/v4/spreadsheets/%s%s'  --Format with: SpreadsheetID, args
 
