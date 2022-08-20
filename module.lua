@@ -12,7 +12,7 @@
 	Make sure, if you haven't already that you have the Spreadsheet API enabled for that specific project, otherwise requests will be denied:
 	https://console.cloud.google.com/apis/api/sheets.googleapis.com
 
-	If you don't know your project ID, in your browser enter the request URL in your browser,
+	If you don't know your project ID, enter the request URL in your browser,
 	there will be a link provided which takes you straight to where you need to be to enable it.
 	
 	If you recieve an error: 403 The caller does not have permission, I fixed this by clicking "Share" at the top right
